@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import video from "../assets/video/hero-video.mp4";
 
-const HEADLINE_WORDS = ["Every", "Detail", "Tells", "a", "Story."];
+const HEADLINE_WORDS = ["Designed", "to", "Leave", "a", "Lasting", "Impression."];
 
 const HERO_BACKGROUND_VIDEO_SRC = video;
 
