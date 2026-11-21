@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NAV_LINKS } from '../data/studioData';
 import { BrandCrest } from './OrnamentMotif';
-import logo from '../assets/images/image.png';
+import logo from '../assets/images/logo.png';
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -47,8 +47,8 @@ export const Navbar: React.FC = () => {
           aria-label="Riwaaz Invitation Home"
         >
           {/* <BrandCrest className="w-7 h-7 text-[#124E46] shrink-0" /> */}
-          <div className='w-8'>
-            <img src={logo} alt="Logo" />
+          <div className='w-8 flex items-center justify-center'>
+            <img src={logo} alt="Logo"  />
           </div>
           <span className="font-serif text-xl sm:text-2xl font-semibold tracking-tight">
             Riwaaz Invitation

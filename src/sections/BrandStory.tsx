@@ -1,9 +1,11 @@
-import React from 'react';
-import { motion } from 'motion/react';
-import { STUDIO_IMAGES } from '../data/studioData';
-import { StudioImage } from '../components/StudioImage';
-import { GoldHairline } from '../components/OrnamentMotif';
-
+import React from "react";
+import { motion } from "motion/react";
+import { STUDIO_IMAGES } from "../data/studioData";
+import { StudioImage } from "../components/StudioImage";
+import { GoldHairline } from "../components/OrnamentMotif";
+import { WhatsAppButton } from "../components/WhatsAppButton";
+import { STUDIO_CONTACT } from "../utils/whatsapp";
+import { Phone } from "lucide-react";
 export const BrandStory: React.FC = () => {
   return (
     <section
@@ -49,7 +51,26 @@ export const BrandStory: React.FC = () => {
             <GoldHairline />
 
             <p className="text-base sm:text-lg leading-relaxed text-[#252525]/85 max-w-2xl">
-              At Riwaaz Invitation, we believe every celebration and every brand deserves a unique identity. From thoughtfully designed invitations to personalized packaging and creative branding, we bring ideas to life through design, detail, and imagination.
+              Some moments deserve more than a quick message. With
+              @riwaaz_invitation, a simple invite or celebration can become
+              something personal—whether it’s a wedding card, a custom e-invite,
+              a photo magazine with a playful caricature, or custom packaging
+              for a growing brand. Every detail is shaped around your occasion,
+              your memories, and your style—something people actually keep and
+              remember.
+            </p>
+            <p className="text-base sm:text-lg leading-relaxed text-[#252525]/85 max-w-2xl">
+              Want to create yours? Call or WhatsApp.{" "}
+              <a
+                href={STUDIO_CONTACT.phoneHref}
+                className="flex items-center gap-2.5 hover:text-[#E4D2A0] transition-colors tabular-nums"
+              >
+                <Phone
+                  className="w-4 h-4 text-[#C6A45D] shrink-0"
+                  aria-hidden="true"
+                />
+                <span>{STUDIO_CONTACT.phoneDisplay}</span>
+              </a>
             </p>
 
             <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-6 border-t border-[#252525]/10">
@@ -58,7 +79,7 @@ export const BrandStory: React.FC = () => {
                   Personal Celebrations
                 </h3>
                 <p className="text-sm leading-relaxed text-[#252525]/75">
-                  Traditional Indian wedding cards, floral suites, and digital invitations crafted with warmth and cultural grace.
+                  Traditional Indian wedding cards, custom e-invite, and a photo magazine crafted with warmth and cultural grace and more.
                 </p>
               </div>
               <div>
@@ -66,7 +87,8 @@ export const BrandStory: React.FC = () => {
                   Distinctive Brands
                 </h3>
                 <p className="text-sm leading-relaxed text-[#252525]/75">
-                  Custom packaging, product labels, stickers, stationery, and visual identities designed to stand apart.
+                  Custom packaging, product labels, stickers, and
+                  visual identities designed to stand apart.
                 </p>
               </div>
             </div>
